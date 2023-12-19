@@ -4,7 +4,7 @@
 
 bool isAnagram(char* s, char* t) {
     int	hash[26] = {0};
-	int	i = 0;
+	register int	i = 0;
 	while (s[i] && t[i])
 	{
 		hash[s[i] - 'a']++;
